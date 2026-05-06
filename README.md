@@ -61,6 +61,103 @@ Students can later view their results using their Student ID and Exam ID.
 | Logging | Debugging & Monitoring |
 
 ---
+---
+
+# 🖥️ Frontend Interface
+
+The system provides a simple and user-friendly interface designed for both teachers and students.
+
+The homepage acts as a navigation portal where users can choose their role and access the appropriate module.
+
+The frontend is developed using:
+- HTML5
+- CSS3
+- Responsive Design Principles
+
+---
+
+# 🔐 User Login & Navigation System
+
+The application contains separate access interfaces for:
+
+- 👨‍🏫 Teachers
+- 🎓 Students
+
+This role-based navigation helps organize the system efficiently and improves usability.
+
+---
+
+# 👨‍🏫 Teacher Interface
+
+The Teacher Module is designed for managing the evaluation process.
+
+Teachers can:
+
+- Upload student answer sheet PDFs
+- Upload answer key CSV files
+- Trigger AI-based evaluation
+- Generate marks automatically
+- View detailed feedback
+- Store results in the database
+
+The teacher dashboard simplifies the correction process and reduces manual effort.
+
+---
+
+# 🎓 Student Interface
+
+The Student Module allows students to securely access their evaluation results.
+
+Students can:
+
+- Enter Student ID
+- Enter Exam ID
+- Search for their results
+- View obtained score
+- Access AI-generated feedback
+
+This module provides quick and transparent result access.
+
+---
+
+# 🎨 User Interface Highlights
+
+## ✅ Clean Design
+The application uses a simple and professional layout for better readability.
+
+## ✅ Responsive Interface
+The interface adapts to different screen sizes and devices.
+
+## ✅ Easy Navigation
+Separate navigation paths for teachers and students improve accessibility.
+
+## ✅ Interactive Components
+Buttons and forms are styled for smooth user interaction.
+
+## ✅ Modern Styling
+The UI includes:
+- Soft shadows
+- Rounded corners
+- Organized layouts
+- Minimal color design
+
+---
+
+# 🔄 Workflow Navigation
+
+```text
+Homepage
+   ↓
+Select User Type
+   ↓
+Teacher Portal  → Upload Files → AI Evaluation → Store Results
+
+OR
+
+Student Portal → Enter Credentials → View Results
+```
+
+---
 
 # 📂 Project Structure
 
