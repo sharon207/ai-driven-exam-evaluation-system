@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Student Answer and CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Upload Student Answer and Correct Answers</h1>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="student_id">Student ID:</label>
+        <input type="text" name="student_id" required><br><br>
+
+        <label for="exam_id">Exam ID:</label>
+        <input type="text" name="exam_id" required><br><br>
+
+        <label for="student_pdf">Student PDF Answer:</label>
+        <input type="file" name="student_pdf" required><br><br>
+
+        <label for="answers_csv">Correct Answers CSV:</label>
+        <input type="file" name="answers_csv" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

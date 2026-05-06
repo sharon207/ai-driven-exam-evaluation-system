@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <script type="module">
+        // Import Firebase modules (for version 9+)
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBuFipjljkZsxbxHY2CPXXCea8AUhE45Gc",
+            authDomain: "ai-exam-5d7ee.firebaseapp.com",
+            projectId: "ai-exam-5d7ee",
+            storageBucket: "ai-exam-5d7ee.appspot.com",
+            messagingSenderId: "260157194951",
+            appId: "1:260157194951:web:88fc5359d25197e64cb4e2"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Signup Function
+        window.signup = async function () {
+            const email = document.getElementById("signupEmail").value;
+            const password = document.getElementById("signupPassword").value;
+
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const token = await userCredential.user.getIdToken();
+                
+                window.location.href = "http://127.0.0.1:5000/login";
+            } catch (error) {
+                alert(error.message);
+            }
+        };
+
+        // Login Function
+        window.login = async function () {
+            const email = document.getElementById("loginEmail").value;
+            const password = document.getElementById("loginPassword").value;
+
+            try {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const token = await userCredential.user.getIdToken();
+
+                window.location.href = "http://127.0.0.1:5000/login";
+            } catch (error) {
+                alert(error.message);
+            }
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+           
+        }
+
+       
+
+        h2 {
+            margin-bottom: 20px;
+            color: #007BFF; /* Blue text */
+        }
+
+        input {
+            
+            padding: 10px;
+            margin: 10px 0; /* Space between fields */
+            border: 1px solid #007BFF; /* Blue border */
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #0056b3; /* Darker blue on focus */
+            outline: none;
+        }
+
+        button {
+            
+            padding: 10px;
+            background-color: #007BFF; /* Blue button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px; /* Space above the button */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+        
+        
+    </style>
+
+
+</head>
+<body>
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email"><br>
+    <input type="password" id="loginPassword" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+
+    <h2>Signup</h2>
+    <input type="email" id="signupEmail" placeholder="Email"><br>
+    <input type="password" id="signupPassword" placeholder="Password"><br>
+    <button onclick="signup()">Signup</button>
+</body>
+</html>

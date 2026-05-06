@@ -1,0 +1,88 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fd;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h3 {
+    color: #1e3a8a; /* Dark blue */
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Score and feedback styling */
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e3f2fd; /* Light blue background */
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #bbdefb; /* Slightly darker blue on hover */
+}
+
+strong {
+    color: #1e3a8a;
+}
+
+span {
+    color: #388e3c; /* Green for correct answers */
+}
+
+span.incorrect {
+    color: #d32f2f; /* Red for incorrect answers */
+}
+
+/* Total score styling */
+.total-score {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+/* Button styling */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1e3a8a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #1565c0;
+}
+
+/* Styling for correct and incorrect answers */
+span.correct {
+    color: #388e3c; /* Green for correct answers */
+}
+
+span.incorrect {
+    color: #d32f2f; /* Red for incorrect answers */
+}
