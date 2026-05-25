@@ -95,6 +95,13 @@ The application contains separate access interfaces for:
 This role-based navigation helps organize the system efficiently and improves usability.
 
 ---
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/login.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
 
 # 👨‍🏫 Teacher Interface
 
@@ -112,6 +119,28 @@ Teachers can:
 The teacher dashboard simplifies the correction process and reduces manual effort.
 
 ---
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/teacher%20interface.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/result.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/result2.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
+
 
 # 🎓 Student Interface
 
@@ -128,6 +157,13 @@ Students can:
 This module provides quick and transparent result access.
 
 ---
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/studentinterface.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
 
 # 🎨 User Interface Highlights
 
