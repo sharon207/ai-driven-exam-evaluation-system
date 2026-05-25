@@ -164,7 +164,20 @@ This module provides quick and transparent result access.
     alt="Sharon Xavier Banner"
   />
 </p>
-
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/result.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/result2.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
 # 🎨 User Interface Highlights
 
 ## ✅ Clean Design
