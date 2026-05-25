@@ -182,3 +182,5 @@ AI-Exam-Evaluator/
 ├── instance/
 │
 └── uploads/
+
+<img src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/main/intex.png">

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login & Signup</title>
+
     <script type="module">
-        // Import Firebase modules (for version 9+)
+        // Import Firebase modules
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword
+        } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
 
         // Firebase configuration
         const firebaseConfig = {
@@ -29,9 +34,11 @@
             const password = document.getElementById("signupPassword").value;
 
             try {
-                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-                const token = await userCredential.user.getIdToken();
-                
+                const userCredential =
+                    await createUserWithEmailAndPassword(auth, email, password);
+
+                await userCredential.user.getIdToken();
+
                 window.location.href = "http://127.0.0.1:5000/login";
             } catch (error) {
                 alert(error.message);
@@ -44,8 +51,10 @@
             const password = document.getElementById("loginPassword").value;
 
             try {
-                const userCredential = await signInWithEmailAndPassword(auth, email, password);
-                const token = await userCredential.user.getIdToken();
+                const userCredential =
+                    await signInWithEmailAndPassword(auth, email, password);
+
+                await userCredential.user.getIdToken();
 
                 window.location.href = "http://127.0.0.1:5000/login";
             } catch (error) {
@@ -55,68 +64,104 @@
     </script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Light blue background */
-           
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-       
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+
+            /* Center everything */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
 
         h2 {
-            margin-bottom: 20px;
-            color: #007BFF; /* Blue text */
+            margin-bottom: 15px;
+            color: #007bff;
         }
 
         input {
-            
+            width: 100%;
             padding: 10px;
-            margin: 10px 0; /* Space between fields */
-            border: 1px solid #007BFF; /* Blue border */
+            margin: 10px 0;
+
+            border: 1px solid #007bff;
             border-radius: 5px;
-            box-sizing: border-box;
+
             font-size: 14px;
         }
 
         input:focus {
-            border-color: #0056b3; /* Darker blue on focus */
+            border-color: #0056b3;
             outline: none;
         }
 
         button {
-            
+            width: 100%;
             padding: 10px;
-            background-color: #007BFF; /* Blue button */
+            margin-top: 10px;
+
+            background-color: #007bff;
             color: white;
+
             border: none;
             border-radius: 5px;
+
             font-size: 16px;
             cursor: pointer;
-            margin-top: 10px; /* Space above the button */
         }
 
         button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3;
         }
 
         .form-section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
-        
-        
     </style>
-
-
 </head>
-<body>
-    <h2>Login</h2>
-    <input type="email" id="loginEmail" placeholder="Email"><br>
-    <input type="password" id="loginPassword" placeholder="Password"><br>
-    <button onclick="login()">Login</button>
 
-    <h2>Signup</h2>
-    <input type="email" id="signupEmail" placeholder="Email"><br>
-    <input type="password" id="signupPassword" placeholder="Password"><br>
-    <button onclick="signup()">Signup</button>
+<body>
+
+    <div class="container">
+
+        <!-- Login Section -->
+        <div class="form-section">
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email" />
+            <input type="password" id="loginPassword" placeholder="Password" />
+
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Signup Section -->
+        <div class="form-section">
+            <h2>Signup</h2>
+
+            <input type="email" id="signupEmail" placeholder="Email" />
+            <input type="password" id="signupPassword" placeholder="Password" />
+
+            <button onclick="signup()">Signup</button>
+        </div>
+
+    </div>
+
 </body>
 </html>
