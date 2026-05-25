@@ -75,6 +75,15 @@ The frontend is developed using:
 - Responsive Design Principles
 
 ---
+## Preview
+
+<p align="center">
+  <img 
+    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/intex.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
+</p>
 
 # 🔐 User Login & Navigation System
 
@@ -185,12 +194,4 @@ AI-Exam-Evaluator/
 
 
 
-## Preview
 
-<p align="center">
-  <img 
-    src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/intex.png"
-    width="100%"
-    alt="Sharon Xavier Banner"
-  />
-</p>
