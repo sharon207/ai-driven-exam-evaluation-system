@@ -186,5 +186,14 @@ AI-Exam-Evaluator/
 ## Preview
 
 <p align="center">
-  <img src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/main/intex.png" width="700">
+  <img src="images/intex.png" width="700">
+</p>
+<p align="center">
+  <img src="images/login.png" width="700">
+</p>
+<p align="center">
+  <img src="images/result.png" width="700">
+</p>
+<p align="center">
+  <img src="images/result2.png" width="700">
 </p>
