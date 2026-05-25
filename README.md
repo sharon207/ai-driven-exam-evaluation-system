@@ -186,5 +186,5 @@ AI-Exam-Evaluator/
 ## Preview
 
 <p align="center">
-  <img src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/40bb15427cf3557bb00e2c0b457c064565c37fdd/intex.png" width="700">
+  <img src="https://github.com/sharon207/ai-driven-exam-evaluation-system/blob/main/intex.png" width="700">
 </p>
