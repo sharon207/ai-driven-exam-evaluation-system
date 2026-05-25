@@ -188,14 +188,9 @@ AI-Exam-Evaluator/
 ## Preview
 
 <p align="center">
-  <img src="https://github.com/sharon207/ai-driven-exam-evaluation-system/raw/main/intex.png" width="700">
-</p>
-<p align="center">
-  <img src="images/login.png" width="700">
-</p>
-<p align="center">
-  <img src="images/result.png" width="700">
-</p>
-<p align="center">
-  <img src="images/result2.png" width="700">
+  <img 
+    src="https://raw.githubusercontent.com/sharon207/sharon207/ai-driven-exam-evaluation-system\intex.png"
+    width="100%"
+    alt="Sharon Xavier Banner"
+  />
 </p>
